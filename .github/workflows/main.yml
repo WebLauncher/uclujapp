@@ -26,17 +26,17 @@ jobs:
       - name: Install app dependencies
         run: npm install
 
-      - name: Add Android platform
-        run: ionic capacitor platform add android@latest
+      - name: Ionic build
+        run: ionic build
 
-      - name: Build Android Dev APK
-        run: ionic build android
+      - name: Add Android to Capacitor
+        run: npx cap add android
 
-      - name: Build Android Release APK
-        run: ionic build android --release --prod
+      - name: Copy www to Android public
+        run: npx cap copy
 
       - name: Generate the Android App Bundle
-        working-directory: ./platforms/android/
+        working-directory: ./android/
         run: ./gradlew bundle
 
       - name: Upload dev APK
