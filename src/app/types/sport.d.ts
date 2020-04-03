@@ -1,3 +1,3 @@
 export type Sport = {
-    name: string;
+  name: string;
 }
