@@ -1,0 +1,7 @@
+{
+  "name": "uclujapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
