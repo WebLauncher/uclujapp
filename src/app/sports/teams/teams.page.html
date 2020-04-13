@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{(sport$ | async)?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let team of teams$ | async"
+            [routerLink]="['/sports/team', team.id]">
+    <ion-label>{{team.name}}</ion-label>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sporturi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let sport of sports$ | async"
+              [routerLink]="['teams', sport.id]">
+      <ion-icon [name]="sport.icon"
+                class="ion-padding-end"></ion-icon>
+      <ion-label>{{sport.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

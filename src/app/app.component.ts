@@ -15,17 +15,17 @@ export class AppComponent implements OnInit {
   public appPages = [
     {
       title: 'Stiri',
-      url: '/folder/Stiri',
+      url: '/news',
       icon: 'newspaper'
     },
     {
       title: 'Sporturi',
-      url: '/folder/Sporturi',
+      url: '/sports',
       icon: 'football'
     },
     {
       title: 'Despre App',
-      url: '/folder/Despre App',
+      url: '/about',
       icon: 'phone-portrait'
     }
   ];
