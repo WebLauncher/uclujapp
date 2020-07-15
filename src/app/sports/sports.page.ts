@@ -6,8 +6,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-sports',
   templateUrl: './sports.page.html',
-  styleUrls: ['./sports.page.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./sports.page.scss']
 })
 export class SportsPage implements OnInit {
   sports$ = this.getSports();
